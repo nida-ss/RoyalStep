@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+  @apply font-montserrat;
+}
+
+/* Background gradient effects for the website */
+.bg-blur-blue {
+  @apply bg-[#0022FF] opacity-20 rounded-full blur-[400px];
+}
+
+.bg-blur-pink {
+  @apply bg-secondary opacity-20 rounded-full blur-[320px];
+}
+
+.bg-blur-cyan {
+  @apply bg-[#47FFFC] opacity-20 rounded-full blur-[300px];
+}
+
+.bg-blur-orange {
+  @apply bg-[#FF8952] opacity-20 rounded-full blur-[225px];
+}
+
+/* Animation effects */
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Service card styling */
+.service-card {
+  @apply bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-md p-8 flex flex-col items-center;
+}

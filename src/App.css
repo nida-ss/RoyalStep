@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the Royal Step website */
+
+@layer base {
+  body {
+    @apply font-montserrat text-black/80 bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-medium px-6 py-2 rounded-full transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90;
+  }
+
+  .btn-outline {
+    @apply border border-primary text-primary hover:bg-primary/10;
+  }
+
+  .container {
+    @apply px-4 mx-auto;
+  }
+
+  .section-title {
+    @apply font-bold text-3xl md:text-4xl lg:text-[42px] text-primary text-center mb-16 leading-[30px] tracking-tight uppercase;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-primary/40 shadow-md overflow-hidden;
+  }
+}
+
+/* Responsive adjustments */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
