@@ -16,10 +16,6 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between py-6 md:py-8">
           <a href="#" className="flex items-center gap-3">
             <img src="/vite.svg" alt="Royal Step" className="w-[120px] h-auto md:w-[150px]" />
-            <div className="hidden sm:block">
-              <div className="font-montserrat font-semibold text-[#003B5A] text-xl leading-6">Royal Step</div>
-              <div className="text-xs text-black/60 -mt-0.5">Connect IT Perfectly</div>
-            </div>
           </a>
 
           <nav className="hidden lg:flex items-center gap-8 font-montserrat text-[20px] leading-6">
