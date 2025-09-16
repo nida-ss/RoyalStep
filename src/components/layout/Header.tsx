@@ -102,7 +102,7 @@ const Header: React.FC = () => {
   const navItems = [
     { name: "Home", href: "#home", current: true },
     { name: "Services", href: "#services" },
-    { name: "Web Solution", href: "#web-solution" },
+    { name: "Web Solution", href: "#web-olution" },
     { name: "Studio", href: "#studio" },
     { name: "Data Recovery", href: "#data-recovery" },
     { name: "Contact US", href: "#contact" },
