@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
         <Header />
         <Hero />
         <RepairServices />
-        <ServiceCards />
+        {/* <ServiceCards /> */}
         <WhyChooseUs />
         <Achievements />
         <NewsAndBlogs />
