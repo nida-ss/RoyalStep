@@ -13,37 +13,37 @@ const ServicesList2: React.FC = () => {
             id: 1,
             title: "PC And Laptop Repair In Dubai",
             description: "Quick PC And Laptop Repair In Dubai. PC And Laptop Are Crucial Part Of Our Business And Personal Life. Most Complicated Problems, As A Result, You...",
-            image: "/images/pc-laptop-repair.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 2,
             title: "Mobile Repair And Data Recovery Services In Dubai",
             description: "Affordable Mobile Repair And Data Recovery Services In Dubai Mobiles Or Smartphones Are The Components...",
-            image: "/images/mobile-repair.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 3,
             title: "Web Solutions",
             description: "Reliable Web Solutions In Dubai. Businesses Big And Small Need A Web Presence Outside Of Their Brick And Mortar Establishment. If You Want To Create Your...",
-            image: "/images/web-solutions.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 4,
             title: "Additional Services",
             description: "With Several Different Services For Creating Machines, Royal Step Support Its Customers. Our Professional Engineers And Specialists Have Years Of Expertise...",
-            image: "/images/additional-services.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 5,
             title: "Computer Repair Service In Dubai",
             description: "Royal Step Offers Reliable Computer Repair Services Dubai. Fixing Top Solutions For All Your Computer Repair Needs. Whether It's A Simple Issue Or...",
-            image: "/images/computer-repair.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 6,
             title: "Home Service",
             description: "Home Service Computer Repair, Convenient, Reliable And Efficient In Today's Tech-Driven World. Having A Functional Computer Is Essential For Both Personal...",
-            image: "/images/home-service.jpg"
+            image: "/api/placeholder/400/300"
         }
     ];
 

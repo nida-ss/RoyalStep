@@ -91,4 +91,4 @@ const QuickAppointment: React.FC = () => {
     );
 };
 
-export default QuickAppointment;</span>
+export default QuickAppointment;

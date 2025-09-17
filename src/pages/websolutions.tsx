@@ -3,7 +3,7 @@ import Wbsolutions from '../components/web solution sections/websolutions';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
 
-const HomePage: React.FC = () => {
+const WebSolutions: React.FC = () => {
   return (
     <div className="relative overflow-x-hidden">
       {/* Main Content - header moved into Hero component to avoid duplication */}
@@ -17,4 +17,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default WebSolutions;

@@ -14,14 +14,14 @@ const List5: React.FC = () => {
             id: 1,
             title: "CCTV Installation Company In Dubai",
             description: "Your Trusted Partner For CCTV Installation Service In Dubai Is Here! Dedicated To Delivering...",
-            image: "/images/cctv-installation.jpg", // Replace with actual image path
+            image: "/api/placeholder/400/300", // Replace with actual image path
             imageAlt: "CCTV Installation Service"
         },
         {
             id: 2,
             title: "Website Development Company In Dubai",
             description: "Your Trusted Partner For Web Solutions In Dubai. Digital Work, Proud To Be Known As The Best Website...",
-            image: "/images/website-development.jpg", // Replace with actual image path
+            image: "/api/placeholder/400/300", // Replace with actual image path
             imageAlt: "Website Development Service"
         }
     ];

@@ -13,37 +13,37 @@ const ServicesList1: React.FC = () => {
             id: 1,
             title: "Macbook Repair In Dubai",
             description: "We're Bringing Solutions, Fixing Or Emails, And Zooming Processor, Digital World On Your MacBook Suddenly, Everything Can Be Busy.",
-            image: "/images/macbook-repair.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 2,
             title: "iMac Repair In Dubai",
             description: "Welcome To Rigel Step, Your Top Choice For Expert iMac Repair Services In Dubai Since The iMac's Debut In 1998, Apple Has Continuously Innovated.",
-            image: "/images/imac-repair.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 3,
             title: "iPad Repair In Dubai",
             description: "Planning Is An Essential Service For Both Personal And Professional Tasks, Making Accidental Drops Or Water Damage To Your iPad Particularly Frustrating.",
-            image: "/images/ipad-repair.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 4,
             title: "iPhone Repair In Dubai",
             description: "Rigel Step Is Well-Known For Its Professional iPhone Repair Services In Dubai, Delivering A One-Stop Repair Solution For Different Versions Of iPhone Devices.",
-            image: "/images/iphone-repair.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 5,
             title: "Hard Drive Data Recovery",
             description: "Experienced Hard Drive Data Recovery Services In Dubai Are You Using A Hard Disk Or A Hard Drive To Store Large Volumes Of Data? If You Losing The Data.",
-            image: "/images/data-recovery.jpg"
+            image: "/api/placeholder/400/300"
         },
         {
             id: 6,
             title: "IT Support Services",
             description: "In General, The Setups, Installations, And Settings Need To Be Done Accurately When Building New Computers, Laptops, Or Workstations, Whether For The Home.",
-            image: "/images/it-support.jpg"
+            image: "/api/placeholder/400/300"
         }
     ];
 

@@ -54,4 +54,4 @@ const MapSection: React.FC = () => {
     );
 };
 
-export default MapSection;</div>
+export default MapSection;

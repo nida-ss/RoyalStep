@@ -13,42 +13,42 @@ const services: ServiceCard[] = [
         id: 'cctv-services',
         title: 'CCTV Services Dubai',
         description: 'Royal Step Cctv Service Provider Protect Your Property With State-of-the-art Security Systems That Keep Your Home Or Business, You Want To Ensure...',
-        image: '/images/cctv-services.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'CCTV installation and monitoring services'
     },
     {
         id: 'computer-repair',
         title: 'Computer Repair Sharjah',
         description: 'In Today\'s Digital World, Businesses Heavily Rely On Their IT Infrastructure, Thinking And Maintaining The Complex Technology...',
-        image: '/images/computer-repair.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'Computer repair technician working'
     },
     {
         id: 'laptop-repair',
         title: 'Laptop Repair In Dubai',
         description: 'Home Service Computer Repair, Convenient, Reliable And Efficient. In Today\'s Tech-Driven World, Having A Functional Computer Is Essential For Both Personal...',
-        image: '/images/laptop-repair.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'Laptop repair services'
     },
     {
         id: 'structured-cabling',
         title: 'Structured Cabling Services In Dubai',
         description: 'Your Trusted Partner For Structured Cabling Services In Dubai. In Dubai, Committed To Delivering...',
-        image: '/images/structured-cabling.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'Network cabling installation'
     },
     {
         id: 'data-recovery',
         title: 'Data Recovery Abu Dhabi',
         description: 'Customized Hard Disk Data Recovery Service In Dubai: Are You Using A Hard Disk Or A Hard Drive To Store Large Volumes Of Data? It\'s When You Need...',
-        image: '/images/data-recovery.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'Data recovery services'
     },
     {
         id: 'buy-back-trade',
         title: 'Buy Back Trade In UAE',
         description: 'Your Trusted Partner For Buy Back Trade In UAE Royal Step Is A Leading Name In Buy Back Trade In The UAE Services, Whether You Have An iPhone, MacBook...',
-        image: '/images/buy-back-trade.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'Electronic device trade-in services'
     }
 ];

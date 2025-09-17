@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 interface ServiceCard {
     id: string;
@@ -14,42 +13,42 @@ const services: ServiceCard[] = [
         id: 'home-automation',
         title: 'Home Automation System',
         description: 'Welcome To Our Home Automation Services. Your Gateway To The World Of Home Automation. With Our Cutting Edge Home Automation System Services.',
-        image: '/images/home-automation.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'Modern living room with smart home automation'
     },
     {
         id: 'network-wifi',
         title: 'Network And WiFi Services',
         description: 'Royal Step Is The Number One Choice When It Comes To Providing Our For Seamless Internet And WiFi Configuration Support To Boost These Service.',
-        image: '/images/network-wifi.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'Person working on network configuration'
     },
     {
         id: 'remote-support',
         title: 'Remote IT Support',
         description: 'Royal Step Helps Its Customers By Offering Several Relevant Services To Building Machines The World Of And Professional Engineers Over Years Of Experience.',
-        image: '/images/remote-support.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'IT professional providing remote support'
     },
     {
         id: 'custom-build',
         title: 'Custom Build Machine',
         description: 'Custom Build Machines Can Provide You With A Solution. This Is Tailored To Your Specific Needs, Whether You Are A Gamer, Content Creator, Or Professional Who.',
-        image: '/images/custom-build.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'Custom computer building process'
     },
     {
         id: 'data-recovery',
         title: 'Data Recovery Services In Dubai',
         description: 'Best Data Recovery Services In Dubai. People These Days Are Highly Dependent Upon Advanced Technologies And Digital Devices Such As.',
-        image: '/images/data-recovery.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'Data recovery hardware and process'
     },
     {
         id: 'buy-back',
         title: 'Buy Back',
         description: 'IT Recycling Is A Popular Practice Among Organizations These Days, Where You Can Exchange Your Depreciated Devices Like PC, Laptops, And Likewise For Brand.',
-        image: '/images/buy-back.jpg',
+        image: '/api/placeholder/400/300',
         alt: 'IT equipment buyback service'
     }
 ];
@@ -59,11 +58,10 @@ const ServiceCard: React.FC<{ service: ServiceCard }> = ({ service }) => {
         <div className="relative w-full h-[620px] bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
             {/* Image Container */}
             <div className="relative w-full h-48 overflow-hidden">
-                <Image
+                <img
                     src={service.image}
                     alt={service.alt}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
             </div>
             

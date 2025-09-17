@@ -1,4 +1,5 @@
 ﻿import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from '../ui/Button';
 
@@ -30,24 +31,24 @@ const Header: React.FC = () => {
 
           {/* Desktop Nav */}
           <nav className='hidden lg:flex items-center gap-6 xl:gap-8 font-montserrat text-base xl:text-lg'>
-            <a className='font-semibold text-black/90' href='#home'>
+            <Link to="/" className='font-semibold text-black/90 hover:text-blue-600 transition-colors'>
               Home
-            </a>
-            <a className='font-medium text-black/50 hover:text-black/80' href='#services'>
+            </Link>
+            <Link to="/services" className='font-medium text-black/50 hover:text-black/80 transition-colors'>
               Services
-            </a>
-            <a className='font-medium text-black/50 hover:text-black/80' href='#web-solution'>
+            </Link>
+            <Link to="/web-solution" className='font-medium text-black/50 hover:text-black/80 transition-colors'>
               Web Solution
-            </a>
-            <a className='font-medium text-black/50 hover:text-black/80' href='#studio'>
+            </Link>
+            <Link to="/studio" className='font-medium text-black/50 hover:text-black/80 transition-colors'>
               Studio
-            </a>
-            <a className='font-medium text-black/50 hover:text-black/80' href='#data-recovery'>
+            </Link>
+            <Link to="/data-recovery" className='font-medium text-black/50 hover:text-black/80 transition-colors'>
               Data Recovery
-            </a>
-            <a className='font-medium text-black/50 hover:text-black/80' href='#contact'>
+            </Link>
+            <Link to="/contact" className='font-medium text-black/50 hover:text-black/80 transition-colors'>
               Contact Us
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Button */}
@@ -74,12 +75,12 @@ const Header: React.FC = () => {
       {isOpen && (
         <div className='lg:hidden bg-white border-t border-gray-200 shadow-md'>
           <nav className='flex flex-col items-center gap-6 py-6 font-montserrat text-base'>
-            <a className='font-semibold text-black/90' href='#home' onClick={() => setIsOpen(false)}>Home</a>
-            <a className='font-medium text-black/70' href='#services' onClick={() => setIsOpen(false)}>Services</a>
-            <a className='font-medium text-black/70' href='#web-solution' onClick={() => setIsOpen(false)}>Web Solution</a>
-            <a className='font-medium text-black/70' href='#studio' onClick={() => setIsOpen(false)}>Studio</a>
-            <a className='font-medium text-black/70' href='#data-recovery' onClick={() => setIsOpen(false)}>Data Recovery</a>
-            <a className='font-medium text-black/70' href='#contact' onClick={() => setIsOpen(false)}>Contact Us</a>
+            <Link to="/" className='font-semibold text-black/90' onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/services" className='font-medium text-black/70' onClick={() => setIsOpen(false)}>Services</Link>
+            <Link to="/web-solution" className='font-medium text-black/70' onClick={() => setIsOpen(false)}>Web Solution</Link>
+            <Link to="/studio" className='font-medium text-black/70' onClick={() => setIsOpen(false)}>Studio</Link>
+            <Link to="/data-recovery" className='font-medium text-black/70' onClick={() => setIsOpen(false)}>Data Recovery</Link>
+            <Link to="/contact" className='font-medium text-black/70' onClick={() => setIsOpen(false)}>Contact Us</Link>
             <Button variant='outline' className='px-5 py-3 text-sm w-[80%]'>
               Book Home Visit
             </Button>

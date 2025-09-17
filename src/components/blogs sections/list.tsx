@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { ArrowRight, RefreshCw } from 'lucide-react';
 
 interface Blog {
@@ -18,7 +17,7 @@ const blogData: Blog[] = [
         title: 'FAST AND RELIABLE COMPUTER REPAIR SERVICE IN DUBAI SOUTH YOU CAN TRUST',
         description: "Looking For A Reliable Computer Repair Service In Dubai South That Solves All Your Laptop And PC Problems Quickly? From Broken Screens To Slow Performance And Data Loss, Professional Repair Can Save You Time, Money, And Stress. Instead Of Trying Risky DIY Fixes That Can Make Things Worse, It's Smarter To Trust...",
         extraInfo: "Don't Let Computer Issues Slow You Down. Call Royal Step At 04 3420080 Or 050 8088819 And Book Your Appointment Today.",
-        imageUrl: '/images/blogs/computer-repair.png',
+        imageUrl: '/api/placeholder/800/450',
         imageAlt: 'Technician repairing a computer motherboard',
         learnMoreLink: '#',
     },
@@ -27,7 +26,7 @@ const blogData: Blog[] = [
         title: 'FIX BROKEN SCREEN NEAR ME | FAST, AFFORDABLE, AND TRUSTED REPAIR SERVICES',
         description: "A Broken Screen Can Ruin Your Whole Day. Imagine This: You're Chatting With A Friend Or Watching A Video, And Suddenly, Your Phone Slips From Your Hand. The Screen Shatters Into Tiny Cracks. Not Only Does It Look Ugly, But It Also Makes Using Your Device Frustrating. If You're Searching For Fix Broken Screen Near Me, You Probably Need A Service That Is Quick, Reliable, And Affordable.",
         extraInfo: 'At Royal Step, We Understand How Much You Depend On Your Device.',
-        imageUrl: '/images/blogs/broken-screen.png',
+        imageUrl: '/api/placeholder/800/450',
         imageAlt: 'Smartphone with a shattered screen',
         learnMoreLink: '#',
     },
@@ -35,7 +34,7 @@ const blogData: Blog[] = [
         id: 3,
         title: 'SELL APPLE PRODUCTS FOR CASH NEAR ME AT A GOOD PRICE',
         description: "The Moment You Type Sell Apple Products For Cash Near Me Into Your Search Bar, It Means You're Looking For More Than Just A Buyer. You're Looking For Convenience, Trust, And Instant Results. Maybe Your iPhone Is Sitting In A Drawer, Unused. Maybe Your MacBook Has Been Replaced By The Latest Model, Or Maybe Your Apple Watch No Longer Excites You The Way It Once Did. Instead Of Letting It Gather Dust Or Lose Value Day By Day, You Can Turn It Into Cash Today.",
-        imageUrl: '/images/blogs/apple-products.png',
+        imageUrl: '/api/placeholder/800/450',
         imageAlt: 'Collection of Apple products including MacBook, iPhone, and AirPods',
         learnMoreLink: '#',
     },
@@ -44,7 +43,7 @@ const blogData: Blog[] = [
         title: 'NEAREST MOBILE REPAIR SHOP AT DAMAC BUSINESS TOWER 907 QUICK & TRUSTED FIXES',
         description: "The Nearest Mobile Repair Shop At DAMAC Business Tower 907 Is Not Only A Place To Fix Your Phone, It's A Place Where You Get Quick Help, Friendly Service, And Repairs You Can Trust. Imagine Your Phone Slips From Your Hand, The Screen Cracks, And You Feel That Sinking Moment. Instead Of Stress, You Need To Walk Into Royal Step, Where We Greet You With A Smile, Check Your Device, And Start Working On It Instantly.",
         extraInfo: "In A Busy City Like Dubai, You Can't Afford To Be Without Your Phone.",
-        imageUrl: '/images/blogs/mobile-repair.png',
+        imageUrl: '/api/placeholder/800/450',
         imageAlt: 'Technician repairing a mobile phone',
         learnMoreLink: '#',
     },
@@ -53,7 +52,7 @@ const blogData: Blog[] = [
 const BlogCard: React.FC<{ blog: Blog; isReversed: boolean }> = ({ blog, isReversed }) => (
     <div className={`flex flex-col lg:flex-row ${isReversed ? 'lg:flex-row-reverse' : ''} items-center gap-8 lg:gap-16 p-8 bg-white/5 backdrop-blur-xl rounded-2xl`}>
         <div className="lg:w-1/2">
-            <Image src={blog.imageUrl} alt={blog.imageAlt} width={800} height={450} className="rounded-lg object-cover w-full h-full" />
+            <img src={blog.imageUrl} alt={blog.imageAlt} className="rounded-lg object-cover w-full h-full" />
         </div>
         <div className="lg:w-1/2 flex flex-col gap-4">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900">{blog.title}</h3>
