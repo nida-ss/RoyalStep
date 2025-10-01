@@ -15,7 +15,7 @@ const MapSection: React.FC = () => {
                 aria-hidden="true"
             ></div>
 
-            <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="w-full  mx-auto px-4 sm:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#003B5A] mb-12 text-center md:text-left">
                     Type Your Location And Check
                 </h2>

@@ -1,94 +1,85 @@
-import React from 'react';
+import React from "react";
+import PopularServices from '../web solution sections/PopularserviceNav'
+const ServicesSection = () => {
+ 
 
-const QuickAppointment: React.FC = () => {
-    const services = [
-        'Laptop Hard Drive Data Recovery',
-        'Desktop Hard Drive Data Recovery',
-        'Raid Hard Drive Data Recovery',
-        'MacBook Hard Drive Data Recovery',
-        'External Hard Drive Data Recovery',
-    ];
+  return (
+    <section className="relative w-full py-16 overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+      {/* Background decorative blobs */}
+      <div className="absolute w-[300px] h-[300px] left-[5%] top-[10%] bg-[#FF8952] rounded-full blur-[200px] opacity-50 animate-pulse"></div>
+      <div className="absolute w-[280px] h-[280px] right-[5%] top-[20%] bg-[#0022FF] rounded-full blur-[250px] opacity-40 animate-pulse"></div>
+      <div className="absolute w-[200px] h-[200px] right-[10%] bottom-[10%] bg-[#FF7230] rounded-full blur-[200px] opacity-50 animate-pulse"></div>
+      <div className="absolute w-[120px] h-[120px] left-[40%] bottom-[5%] bg-[#FFD54F] rounded-full blur-[150px] opacity-60 animate-pulse"></div>
+      <div className="absolute w-[100px] h-[100px] left-[20%] top-[70%] bg-[#FF00FF] rounded-full blur-[140px] opacity-40 animate-pulse"></div>
 
-    const osLeft = [
-        'DOS',
-        'Windows XP/Vista',
-        'Windows 7, 8, 8.1, 10',
-        'Linux',
-        'Ubuntu',
-        'NetWare',
-    ];
+      <div className="relative container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          {/* Left Content */}
+          <div className="lg:col-span-2 space-y-10">
+            {/* What We Offer */}
+            <div>
+              <h2 className="text-2xl font-bold text-[#003B5A] mb-4">
+                Quick data recovery at pocket-friendly price
+              </h2>
+              <p className="text-gray-600 mb-4">
+               Royal Step provides hard-drive data recovery services to both individuals and organizations. We adopt modern tools and techniques to ensure delivering quality services to our clients. Whether your system is crashed or corrupted, our technicians diagnose the problem and help you recover the data without causing a delay.
 
-    const osRight = ['VMware', 'OpenSUSE', 'Fedora', 'Mandriva', 'Debian'];
-
-    const UnderlinedText: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-        <span className="relative inline-block">
-            {children}
-            <span className="absolute -bottom-2 left-0 h-1 w-full bg-cyan-400"></span>
-        </span>
-    );
-
-    return (
-        <div className="relative font-montserrat text-gray-800 overflow-x-hidden">
-            {/* Background Blobs */}
-            <div className="absolute top-[1012px] left-[715px] w-[47px] h-[47px] bg-red-400/50 rounded-full filter blur-[15px] transform matrix(0.87, 0.5, 0.5, -0.87, 0, 0) opacity-50"></div>
-            <div className="absolute top-[1619px] left-[34px] w-[292px] h-[288px] bg-blue-200/50 rounded-full filter blur-[325px] opacity-50"></div>
-            <div className="absolute top-[1832px] left-[162px] w-[292px] h-[318px] bg-yellow-300/50 rounded-full filter blur-[400px] opacity-50"></div>
-            <div className="absolute top-[1611px] right-[calc(50%-405px)] w-[306px] h-[300px] bg-blue-700/50 rounded-full filter blur-[475px] opacity-50"></div>
-            <div className="absolute top-[2344px] left-[-4px] w-[292px] h-[288px] bg-orange-500/50 rounded-full filter blur-[400px] opacity-50"></div>
-            <div className="absolute top-[2183px] right-[calc(50%-451px)] w-[306px] h-[300px] bg-pink-500/50 rounded-full filter blur-[550px] opacity-50"></div>
-            <div className="absolute top-[2930px] left-[34px] w-[292px] h-[288px] bg-purple-300/50 rounded-full filter blur-[300px] opacity-50"></div>
-            <div className="absolute top-[2922px] right-[calc(50%-405px)] w-[306px] h-[300px] bg-cyan-400/50 rounded-full filter blur-[440px] opacity-50"></div>
-            <div className="absolute top-[3179px] left-[34px] w-[54px] h-[54px] bg-pink-500/50 rounded-full filter blur-[15px] opacity-50"></div>
-
-            <div className="container mx-auto px-6 md:px-12 py-24 relative">
-                {/* Section 1: Quick Data Recovery */}
-                <section className="mb-32 md:mb-48">
-                    <h2 className="text-5xl md:text-7xl font-bold text-[#003B5A] leading-tight tracking-tighter capitalize mb-12">
-                        Quick Data Recovery At <UnderlinedText>Pocket-Friendly</UnderlinedText> <UnderlinedText>Price</UnderlinedText>
-                    </h2>
-                    <p className="text-xl md:text-2xl text-black/50 leading-relaxed capitalize mb-8">
-                        Royal Step Provides Hard-Drive Data Recovery Services To Both Individuals And Organizations. We Adopt Modern Tools And Techniques To Ensure Delivering Quality Services To Our Clients. Whether Your System Is Crashed Or Corrupted, Our Technicians Diagnose The Problem And Help You Recover The Data Without Causing A Delay.
-                    </p>
-                    <p className="text-xl md:text-2xl text-black/50 leading-relaxed capitalize mb-6">
-                        Our Affordable Hard Drive Data Recovery Services In Dubai Include:
-                    </p>
-                    <ul className="list-disc list-inside text-xl md:text-2xl text-black/50 leading-relaxed capitalize mb-8 space-y-2">
-                        {services.map((service, index) => (
-                            <li key={index}>{service}</li>
-                        ))}
-                    </ul>
-                    <p className="text-xl md:text-2xl text-black/50 leading-relaxed capitalize mb-8">
-                        We Also Offer Online Payment Solutions, Software Solutions, And More. Give Us A Call For A Detailed Consultation Regarding Your Business Needs And The Scope Of Our Services.
-                    </p>
-                    <div className="flex flex-col md:flex-row gap-8 md:gap-24 text-xl md:text-2xl text-black/50 leading-relaxed capitalize mb-12">
-                        <ul className="list-disc list-inside space-y-2">
-                            {osLeft.map((os, index) => (
-                                <li key={index}>{os}</li>
-                            ))}
-                        </ul>
-                        <ul className="list-disc list-inside space-y-2">
-                            {osRight.map((os, index) => (
-                                <li key={index}>{os}</li>
-                            ))}
-                        </ul>
-                    </div>
-                    <p className="text-xl md:text-2xl text-black/50 leading-relaxed capitalize">
-                        No Matter What Device You Own, You Can Hire Us To Get The Deleted Data Without A Hassle. Do You Have Any Queries? Feel Free To Call Us.
-                    </p>
-                </section>
-
-                {/* Section 2: Book An Appointment */}
-                <section>
-                    <h2 className="text-5xl md:text-7xl font-bold text-[#003B5A] leading-tight tracking-tighter capitalize mb-12">
-                        Book An <UnderlinedText>Appointment</UnderlinedText> For A <UnderlinedText>Complete Hard</UnderlinedText> <UnderlinedText>Drive Data Recovery</UnderlinedText>
-                    </h2>
-                    <p className="text-xl md:text-2xl text-black/50 leading-relaxed capitalize">
-                        Royal Step Is Well-Known For Its Excellent Hard Disk Data Recovery Services In Dubai. If You Choose Us, We Will Provide You With A Free Pick-Up And Timely Delivery Service At An Affordable Price. The Best Thing Is That You Can Reach Out To Us Whenever You Want. It Is Because Our Experts Work Round The Clock To Serve Clients With Excellence. So, If You Have Recently Experienced Hard Drive Failure And Data Loss, Schedule An Appointment With Us. We Will Help You Get Rid Of The Problem With Our Effective Services.
-                    </p>
-                </section>
+Our affordable hard drive data recovery services in Dubai include-
+              </p>
+              <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                <li>Laptop hard drive data recovery</li>
+                <li>Desktop hard drive data recovery</li>
+                <li>Raid hard drive data recovery</li>
+                <li>MacBook hard drive data recovery</li>
+                <li>External hard drive data recovery</li>
+                
+              </ul>
+              <p className="text-gray-600 mt-4">
+                We also offer online payment solutions, software solutions, and more. Give us a call for a detailed consultation regarding your business needs and the scope of our services. 
+              </p>
+                       
+              <div className="mt-4 flex flex-col md:flex-row gap-6">
+               {/* NEW: other list shown in front (left on wide screens) */}
+               <ul className="list-disc pl-6 space-y-1 text-gray-700 min-w-[180px]">
+                <li>DOS</li>
+                <li>Windows XP/Vista</li>
+                <li>Windows 7, 8, 8.1, 10</li>
+                <li>Linux</li>
+                <li>Ubuntu</li>
+                <li>NetWare</li>
+               </ul>
+              {/* existing OS list (kept intact) */}
+              <ul className="list-disc pl-6 space-y-1 text-gray-700">
+                 <li>VMware</li>
+                 <li>OpenSUSE</li>
+                 <li>Fedora</li>
+                 <li>Mandriva</li>
+                 <li>Debian</li>
+              </ul>
             </div>
-        </div>
-    );
+              <p className="text-gray-600 mt-4">
+                We also offer online payment solutions, software solutions, and more. Give us a call for a detailed consultation regarding your business needs and the scope of our services. 
+              </p>
+            </div>
+
+            {/* Why Avail */}
+            <div>
+              <h2 className="text-2xl font-bold text-[#003B5A] mb-4">
+                Book an appointment for a complete hard drive data recovery
+              </h2>
+            
+              <p className="text-gray-600 mt-4">
+               Royal Step is well-known for its excellent hard disk data recovery services in Dubai. If you choose us, we will provide you with a free pick-up and timely delivery service at an affordable price. The best thing is that you can reach out to us whenever you want. It is because our experts work round the clock to serve clients with excellence. So, if you have recently experienced hard drive failure and data loss, schedule an appointment with us. We will help you get rid of the problem with our effective services.
+              </p>
+            </div>
+          </div>
+<PopularServices/>
+          
+      </div>
+      </div>
+    </section>
+  );
 };
 
-export default QuickAppointment;
+export default ServicesSection;

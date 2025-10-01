@@ -33,3 +33,20 @@ body {
 .service-card {
   @apply bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-md p-8 flex flex-col items-center;
 }
+
+
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease-out forwards;
+}

@@ -1,67 +1,94 @@
 import React from 'react';
 
-const DataRecovery: React.FC = () => {
-    return (
-        <div className="relative min-h-screen overflow-hidden bg-white">
-            {/* Background blur elements */}
-            <div className="absolute w-[318px] h-[313px] left-[1648px] top-[825px] bg-black/70 rounded-full blur-[400px] pointer-events-none" />
-            <div className="absolute w-[292px] h-[288px] left-[34px] top-[574px] bg-[#FFDC69] rounded-full blur-[350px] pointer-events-none" />
-            <div className="absolute w-[306px] h-[300px] left-[810px] top-[566px] bg-[#EADED9] rounded-full blur-[400px] pointer-events-none" />
-            <div className="absolute w-[236px] h-[232px] left-[1794px] top-[275px] bg-[#FF7230] rounded-full blur-[250px] pointer-events-none" />
+const DataRecoverySection: React.FC = () => {
+  return (
+    <section className="relative w-full bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden">
+      {/* Background Decorative Ellipses */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Large blur ellipses */}
+        <div className="absolute w-72 h-72 bg-pink-500 rounded-full blur-[250px] opacity-60 top-[70%] right-[10%]" />
+        <div className="absolute w-64 h-64 bg-blue-600 rounded-full blur-[250px] opacity-50 top-[30%] left-[5%]" />
+        <div className="absolute w-64 h-64 bg-orange-400 rounded-full blur-[250px] opacity-50 top-[50%] left-[40%]" />
+        <div className="absolute w-56 h-56 bg-orange-500 rounded-full blur-[200px] opacity-50 top-[15%] right-[15%]" />
+
+        {/* Small decorative ellipses */}
+        <div className="absolute w-20 h-20 bg-yellow-300 rounded-full blur-sm opacity-70 bottom-[15%] left-[10%]" />
+        <div className="absolute w-12 h-12 bg-red-400 rounded-full blur-sm opacity-70 bottom-[10%] left-[20%]" />
+        <div className="absolute w-16 h-16 bg-green-400 rounded-full blur-sm opacity-70 bottom-[20%] right-[10%]" />
+      </div>
+
+      {/* Main Content Container */}
+      <div className="relative z-10 container mx-auto px-4 py-16 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          
+          {/* Left Content Section */}
+          <div className="space-y-6 lg:space-y-8">
+            {/* Main Heading */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight tracking-tight capitalize font-montserrat">
+              Hard drive data Recovery
+            </h1>
             
-            {/* Smaller decorative elements */}
-            <div className="absolute w-[122px] h-[122px] left-[1881px] top-[503px] bg-[#F88439] rounded-full blur-[10px] pointer-events-none" />
-            <div className="absolute w-[54px] h-[54px] left-[1854px] top-[645px] bg-[#FC4798] rounded-full blur-[15px] pointer-events-none" />
-            <div className="absolute w-[79px] h-[79px] left-[4px] top-[781px] bg-[#FFDC69] rounded-full blur-[15px] -rotate-[150deg] pointer-events-none" />
-            <div className="absolute w-[47px] h-[47px] left-[715px] top-[1012px] bg-[#FF6469] rounded-full blur-[15px] rotate-[30deg] pointer-events-none" />
-
-            <div className="container mx-auto px-4 relative z-10">
-                {/* Main heading */}
-                <h1 className="absolute w-[768px] h-[160px] left-[120px] top-[340px] font-montserrat font-bold text-[74px] leading-[80px] tracking-[-0.02em] capitalize text-[#003B5A]">
-                    Hard Drive Data Recovery
-                </h1>
-
-                {/* Main description */}
-                <p className="absolute w-[875px] h-[320px] left-[120px] top-[550px] font-montserrat font-medium text-[26px] leading-[32px] capitalize text-black/50">
-                    Are you using a hard disk or a hard drive to store large volumes of data? If so, losing the data due to device failure can bring a big problem. It is when you need hard drive data recovery services from Royal Step. Royal Step has specialization in offering hard-drive data recovery services in Dubai. Whether it is an internal hard drive of a laptop/desktop or an external hard disk, we know how to fix the problem and retrieve all data. We have certified experts to handle hard drive data-related issues and restore the required data at your preferred location.
-                </p>
-
-                {/* Call to action */}
-                <p className="absolute w-[849px] h-[64px] left-[120px] top-[932px] font-montserrat font-medium text-[26px] leading-[32px] capitalize text-black/50">
-                    Do you need immediate hard drive data recovery services? Contact Royal Step.
-                </p>
-
-                {/* Main image */}
-                <div className="absolute w-[748px] h-[637px] left-[1062px] top-[359px]">
-                    <div className="w-full h-full bg-gray-200 rounded-2xl overflow-hidden">
-                        {/* Replace with actual image */}
-                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-300">
-                            <div className="w-64 h-64 bg-gray-400 rounded-full flex items-center justify-center">
-                                <div className="w-32 h-32 bg-white rounded-full" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Secondary image */}
-                <div className="absolute w-[270px] h-[255px] left-[1672px] top-[263px]">
-                    <div className="w-full h-full bg-gray-200 rounded-2xl overflow-hidden">
-                        {/* Replace with actual image */}
-                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-orange-200 to-orange-400">
-                            <div className="text-white font-semibold">Data Recovery</div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Bottom section/Group 2 */}
-                <div className="absolute w-[608px] h-[80px] left-[1122px] top-[952px] bg-[#003B5A] rounded-xl flex items-center justify-center">
-                    <span className="text-white font-montserrat font-semibold text-lg">
-                        Guaranteed Data Recovery Services in Dubai
-                    </span>
-                </div>
+            {/* First Paragraph */}
+            <p className="text-lg md:text-xl text-black/60 leading-relaxed font-montserrat max-w-3xl">
+              Are you using a hard disk or a hard drive to store large volumes of data? If so, losing the data due to device failure can bring a big problem. It is when you need hard drive data recovery services from Royal Step. 
+              Royal Step has specialization in offering hard-drive data recovery services in Dubai. Whether it is an internal hard drive of a laptop/desktop or an external hard disk, we know how to fix the problem and retrieve all data. We have certified experts to handle hard drive data-related issues and restore the required data at your preferred location.
+            </p>
+            
+            {/* Second Paragraph */}
+            <p className="text-lg md:text-xl text-black/60 leading-relaxed font-montserrat max-w-3xl">
+              Do you need immediate hard drive data recovery services? Contact Royal Step.
+            </p>
+            
+            {/* CTA Button */}
+            <div className="pt-4">
+              <button className="group relative inline-flex items-center gap-3 bg-slate-800 hover:bg-slate-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                See Services
+                <svg 
+                  className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
             </div>
+          </div>
+          
+          {/* Right Image Section */}
+          <div className="relative">
+            {/* Main Image */}
+            <div className="relative">
+              <img 
+                src="harddrive-data.png" 
+                alt="Hard drive recovery service" 
+                className="w-full max-w-xl h-auto rounded-2xl shadow-2xl object-cover mx-auto"
+              />
+              
+              {/* Overlay Badge */}
+              <div className="absolute bottom-6 left-6 bg-slate-800 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow-lg text-sm md:text-base">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0-1-1h-2z" />
+                  </svg>
+                  Guaranteed data recovery services in Dubai
+                </div>
+              </div>
+            </div>
+            
+            {/* Secondary Image */}
+            <div className="absolute -top-6 -right-6 hidden lg:block">
+              <img 
+                src="drive-data.png" 
+                alt="External drive recovery" 
+                className="w-52 h-52 rounded-2xl shadow-xl object-cover border-4 border-white"
+              />
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </section>
+  );
 };
 
-export default DataRecovery;
+export default DataRecoverySection;

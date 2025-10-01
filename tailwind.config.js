@@ -17,6 +17,17 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
       },
     },
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1200px",   // 👈 changed from 1280 → 1200
+        "2xl": "1400px" // 👈 optional tweak, wider desktops
+      },
+    },
   },
   plugins: [],
 };

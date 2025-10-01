@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../ui/Button";
-
+import { Link } from 'react-router-dom';
 const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-tr from-[#fdfbfb] ">
@@ -29,9 +29,9 @@ const Hero: React.FC = () => {
               With Your Device Or Gadgets? Just Contact Us Instantly!
             </p>
             <div className="flex gap-4">
-              <Button className="px-8 py-3 flex items-center gap-2">
+             <Link to={'/services'}> <Button className="px-8 py-3 flex items-center gap-2">
                 See Services →
-              </Button>
+              </Button></Link>
               <Button variant="outline" className="px-8 py-3">
                 More
               </Button>

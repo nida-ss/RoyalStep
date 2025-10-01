@@ -2,7 +2,7 @@ import React from 'react';
 
 const WebSolutions: React.FC = () => {
     return (
-        <section className="relative w-full min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden">
+        <section className="relative w-full bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden">
             {/* Background Decorative Ellipses */}
             <div className="absolute inset-0 pointer-events-none">
                 {/* Large blur ellipses */}
@@ -72,7 +72,7 @@ const WebSolutions: React.FC = () => {
                         {/* Main Image */}
                         <div className="relative">
                             <img 
-                                src="/api/placeholder/748/664" 
+                                src="Team-Collaboration.png" 
                                 alt="Web development dashboard" 
                                 className="w-full max-w-3xl h-auto rounded-2xl shadow-2xl object-cover"
                             />
@@ -91,7 +91,7 @@ const WebSolutions: React.FC = () => {
                         {/* Secondary Image */}
                         <div className="absolute -top-8 -right-8 hidden lg:block">
                             <img 
-                                src="/api/placeholder/272/257" 
+                                src="Team-Collaboration2.png" 
                                 alt="Team collaboration" 
                                 className="w-68 h-64 rounded-2xl shadow-xl object-cover border-4 border-white"
                             />
@@ -101,13 +101,7 @@ const WebSolutions: React.FC = () => {
             </div>
             
             {/* Bottom Decorative Element */}
-            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
-                <div className="flex items-center gap-4 text-slate-600">
-                    <div className="w-12 h-px bg-slate-400"></div>
-                    <span className="text-sm font-medium">2017 - 863 Projects Completed</span>
-                    <div className="w-12 h-px bg-slate-400"></div>
-                </div>
-            </div>
+           
         </section>
     );
 };
